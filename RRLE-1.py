@@ -82,6 +82,11 @@ class compression:
 
                        # Read the whole file at once
                         data = binary_file.read()
+                        if len(data)==0:
+                            x4=0.0
+                            print(x4)
+                            raise SystemExit
+                            
                       
                  
                        
@@ -486,6 +491,10 @@ class compression:
                        # Read the whole file at once
                         
                         data = binary_file.read()
+                        if len(data)==0:
+                            x4=0.0
+                            print(x4)
+                            raise SystemExit
                      
                                              
                                              
